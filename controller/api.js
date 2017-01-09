@@ -28,7 +28,7 @@ module.exports ={
   },
 
   delete: (req,res)=>{
-    Song.findByIdAndDelete(req.params.id, (err,song){
+    Song.findByIdAndDelete(req.params.id, (err,song)=>{
       res.json({message:"Song deleted!", song})
     })
   }
